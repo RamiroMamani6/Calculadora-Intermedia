@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Científica Intermedia</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2 class="title">📟 Calculadora Científica Intermedia</h2>
+    <!-- Pantalla de resultados -->
+    <div class="display">
+      <input type="text" id="result" disabled>
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons">
+      <!-- Fila 1 -->
+      <button onclick="clearResult()">C</button>
+      <button onclick="deleteChar()">⌫</button>
+      <button onclick="insert('/')">÷</button>
+      <button onclick="insert('*')">×</button>
+
+      <!-- Fila 2 -->
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button onclick="insert('-')">−</button>
+
+      <!-- Fila 3 -->
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button onclick="insert('+')">+</button>
+
+      <!-- Fila 4 -->
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button onclick="calculate()">=</button>
+
+      <!-- Fila 5 -->
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+      <button onclick="power()">x²</button>
+      <button onclick="sqrt()">√</button>
+
+      <!-- Fila 6 (extra funciones) -->
+      <button onclick="factorial()">n!</button>
+      <button onclick="toFraction()">a/b</button>
+      <button onclick="convertUnits()">↔</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
